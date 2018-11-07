@@ -43,9 +43,46 @@ nav {
   margin-right: 1rem;
 }
 
+/*Tablet optimisation*/
+@media only screen and (max-width: 590px){
+    header {
+  height: 22rem;
+}
+
+   nav container {
+  max-width: 100%;
+}
+
+.main-banner {
+   padding: 0.75rem 4rem;
+   margin-top: 5rem;
+   margin-right: 2rem;
+  }
+
+  header nav span {
+    display: none;
+  }
+
+navbar li {
+    font-size: 0.75rem;
+  }
+}
+
+/*Mobile optimisation*/
+@media only screen and (max-width: 560px){
+    header {
+  padding-top: 1rem;
+  height: 17rem;
+}
+
+.mainimage {
+  background-position: 20%;
+ }
+}
+
 /*Header Menu*/
 .navbar {
-  margin: 1rem 2rem;
+  margin: 1rem 1rem;
 }
 
 ul li {
@@ -64,21 +101,55 @@ li {
 }
 
 .pagetitle {
+  background-color: white;
   color: black;
   font-weight: bold;
-  background-color: white;
-  padding: 1.5rem 1.5rem;
+  font-size: 2rem;
+  line-height: 1.2rem;
+  padding: 1.5rem 5rem;
 }
 
-@media screen only and (max-width: 768px){
-  .pagetitle {
+@media only screen and (max-width: 560px){
+.pagetitle {
+  padding: 1rem 1rem;
+  font-size: 1rem;
 }
+}
+
+/* Desktop optimisation*/
+@media only screen and (max-width: 768px){
+    header {
+    height: 30rem;
+    padding-top: 0;
+  }
+    .container {
+    width: 100%;
+  }
+
+  .pagetitle {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
 }
 
 /*Grid*/
 .sub {
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 560px){
+.sub {
+   margin: 3.77rem 0;
+   flex-direction: column;
+   align-items: center;
+}
+
+text {
+   margin-top: 1.54rem;
+   font-size: 0.77rem;
+}
 }
 
 .box {
@@ -120,6 +191,13 @@ text {
 
 .info {
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 500px){
+.box text {
+  font-size: 0.77rem;
+  padding-top: 3.77rem
+}
 }
 
 /*Footer*/
